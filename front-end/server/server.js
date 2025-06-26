@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const stripe = require('stripe')('sk_test_51Qg9q7FRSCuMVdLxymXde1DQeyU9kbClhHnyqW4rTytTuutAmqhqfE8yTEr0RZO3kVb0R6rj23HOnb7OL0hgOtVH00Br9SXHxR');
+const stripe = require('stripe')('*API KEY HERE*');
 
 const app = express();
 
