@@ -1,0 +1,43 @@
+<div class="forgot-password-container">
+  <h2>Change name</h2>
+  <form (ngSubmit)="changeUserName()" class="forgot-password-form">
+    <div class="form-group">
+      <label for="name">New name</label>
+      <input
+        type="name"
+        id="name"
+        [(ngModel)]="changeNameData.newName"
+        name="email"
+        required
+        placeholder="Enter your name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="confirm-password">Password</label>
+      <input
+        type="password"
+        id="confirm-password"
+        [(ngModel)]="changeNameData.password"
+        name="confirmPassword"
+        required
+        placeholder="Enter your password"
+        [ngClass]="{
+        'invalid-password':changeNameData.password.length > 0 && changeNameData.password.length < 6,
+        'valid-password': changeNameData.password.length >= 6
+        }"
+      />
+      @if (changeNameData.password.length > 0 && changeNameData.password.length < 6) {
+        <small class="error-text">
+          Password must be at least 6 characters long
+        </small>
+      } @else if (changeNameData.password.length >= 6){
+        <small class="success-text">
+          Password length is valid
+        </small>
+      }
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>

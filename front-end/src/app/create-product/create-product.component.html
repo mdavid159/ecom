@@ -1,0 +1,59 @@
+<div class="create-product-form">
+  <h1>Create Product</h1>
+  <form>
+    <label>
+      Product Name:
+      <input type="text" [(ngModel)]="product.name" name="name" required />
+    </label>
+    <label>
+      Description:
+      <textarea [(ngModel)]="product.description" name="description" required></textarea>
+    </label>
+    <label>
+      Price:
+      <input type="number" [(ngModel)]="product.price" name="price" required />
+    </label>
+    <label>
+      Stock:
+      <input type="number" [(ngModel)]="product.stock" name="stock" required />
+    </label>
+    <label>
+      Category:
+      <input type="text" [(ngModel)]="product.category" name="category" required />
+    </label>
+    <div>
+      <label>
+        Image:
+        <input
+          type="file"
+          accept="image/*"
+          (change)="onFileSelected($event)"
+          style="display: none;"
+          id="fileInput"
+          multiple
+        />
+        <button type="button" (click)="document.getElementById('fileInput')?.click()">
+          Upload Images
+        </button>
+      </label>
+      @for (imageUrl of product.imageUrl; track imageUrl; let i = $index) {
+        <div class="image-preview-container">
+          <div class="image-wrapper"
+            (mouseenter)="hoveredIndex = i"
+            (mouseleave)="hoveredIndex = null"
+          >
+            <div class="image-container">
+              <img [src]="'http://localhost:3000' + product.imageUrl[i]" alt="Uploaded Image" />
+            </div>
+            @if (hoveredIndex === i) {
+              <div class="delete-overlay" (click)="removeImage(i)">
+                ✖
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+    <button type="button" (click)="onCreate()">Create Product</button>
+  </form>
+</div>

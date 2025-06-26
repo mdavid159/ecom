@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You for Your Purchase</title>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Thank You!</h1>
+  </div>
+  <div class="content">
+    <p>Dear {{ this.authService.userName }},</p>
+    <p>We sent your order details on your email for more information</p>
+    <p>We truly appreciate your recent purchase. Your support means the world to us!</p>
+    <p>If you have any questions or need assistance, feel free to reach out. We’re here to help!</p>
+    <button class="button" (click)="navigateToHome()">Go to home</button>
+  </div>
+  <div class="footer">
+    &copy; 2025 Your Company Name. All rights reserved.
+  </div>
+</div>
+</body>
+</html>
+

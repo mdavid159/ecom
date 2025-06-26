@@ -1,0 +1,28 @@
+<header class="header">
+  <div class="container">
+    <h1 class="logo">
+      <a routerLink="/main" routerLinkActive="active">Test</a>
+    </h1>
+    <div
+      class="buttons"
+      (mouseenter)="hovered = true"
+      (mouseleave)="hovered = false"
+    >
+      <button class="btn menu">Menu</button>
+      @if (hovered && authService.loggedIn) {
+        <div class="dropdown">
+          <button class="btn create-btn" (click)="createProd()">Create Product</button>
+          <button class="btn cart-btn" (click)="seeCart()">Cart</button>
+          <button class="btn settings-btn" (click)="seeSettings()">Settings</button>
+        </div>
+      }
+      @if (hovered && !authService.loggedIn) {
+        <div class="dropdown">
+          <button class="btn login-btn" (click)="login()">Login</button>
+          <button class="btn register-btn" (click)="register()">Register</button>
+        </div>
+      }
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>

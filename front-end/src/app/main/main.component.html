@@ -1,0 +1,68 @@
+@if (authService.loggedIn) {
+  <div>
+    <h1>Welcome {{ authService.userName }} to my website!</h1>
+  </div>
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Search for products..."
+      [(ngModel)]="searchQuery"
+    />
+    <button class="btn search-btn" (click)="onSearch()">Search</button>
+  </div>
+  <div class="product-list">
+    @for (product of filteredProducts; track product.id) {
+      <div class="product-card" (click)="viewProductDetails(product.id)">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <p>Stock: {{ product.stock }}</p>
+        <p>Category: {{ product.category }}</p>
+        <p>Published by: {{ product.ByUser }}</p>
+        <img [src]="'http://localhost:3000' + product.imageUrl[0]" alt="{{ product.name }}" class="product-image" />
+      </div>
+    }
+    @if (filteredProducts.length === 0 && isLoading) {
+      <div>
+        <p>Products are being loaded , please wait</p>
+      </div>
+    } @else if (filteredProducts.length === 0 && !isLoading) {
+      <div>
+        <p>No product was found</p>
+      </div>
+    }
+  </div>
+} @else {
+  <h1>Please log in or register!</h1>
+  <div class="search-container">
+    <input
+      type="text"
+      placeholder="Search for products..."
+      [(ngModel)]="searchQuery"
+    />
+    <button class="btn search-btn" (click)="onSearch()">Search</button>
+  </div>
+  <div class="product-list">
+    @for (product of filteredProducts; track product.id) {
+      <div class="product-card" (click)="viewProductDetails(product.id)">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <p>Stock: {{ product.stock }}</p>
+        <p>Category: {{ product.category }}</p>
+        <p>Published by: {{ product.ByUser }}</p>
+        <img [src]="'http://localhost:3000' + product.imageUrl[0]" alt="{{ product.name }}" class="product-image" />
+      </div>
+    }
+    @if (filteredProducts.length === 0 && isLoading) {
+      <div>
+        <p>Products are being loaded , please wait</p>
+      </div>
+    } @else if (filteredProducts.length === 0 && !isLoading) {
+      <div>
+        <p>No product was found</p>
+      </div>
+    }
+  </div>
+}
+<router-outlet></router-outlet>

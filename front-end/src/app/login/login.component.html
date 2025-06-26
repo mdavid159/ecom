@@ -1,0 +1,42 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" [(ngModel)]="loginData.email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="loginData.password"
+        name="password"
+        required
+        [ngClass]="{
+        'invalid-password': loginData.password.length > 0 && loginData.password.length < 6,
+        'valid-password': loginData.password.length >= 6
+        }"
+      />
+      @if (loginData.password.length > 0 && loginData.password.length < 6) {
+        <small class="error-text">
+          Password must be at least 6 characters long
+        </small>
+      } @else if (loginData.password.length >= 6) {
+        <small class="success-text">
+          Password length is valid
+        </small>
+      }
+    </div>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+  <p class="register-link">
+    Don't have an account? <a routerLink="/auth/register" routerLinkActive="active">Register here</a>
+  </p>
+  <p class="forgot-pass-link">
+    Forgot password? <a routerLink="/auth/forgot-password" routerLinkActive="active">Click here</a>
+  </p>
+</div>
+<router-outlet></router-outlet>

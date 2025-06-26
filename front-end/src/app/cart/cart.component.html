@@ -1,0 +1,29 @@
+<div class="cart-container">
+  <h1>Shopping Cart</h1>
+  @for (item of cartItems; track item.id) {
+    <div class="cart-item">
+      <img [src]="'http://localhost:3000' + item.imageUrl" alt="{{ item.name }}" class="cart-item-image" (click)="goToItem(item.productId)"/>
+      <div class="cart-item-details">
+        <h3 class="product-name" (click)="goToItem(item.productId)">{{ item.name }}</h3>
+        <p>Price: ${{ item.price }}</p>
+        <p>Quantity:
+          <input
+            type="number"
+            [value]="item.quantity"
+            (change)="updateQuantity(item.productId, $event)"
+            class="quantity-input"
+          />
+        </p>
+      </div>
+      <div class="cart-item-actions">
+        <button (click)="removeFromCart(item.id)" class="remove-button">Remove</button>
+      </div>
+    </div>
+  }
+  <div class="cart-summary">
+    <h2>Cart Summary</h2>
+    <p>Total Items: {{ totalQuantity }}</p>
+    <p>Grand Total: ${{ totalPrice }}</p>
+    <button (click)="checkout()" class="checkout-button">To Checkout</button>
+  </div>
+</div>

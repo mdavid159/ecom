@@ -1,0 +1,20 @@
+<div class="product-list">
+  @for (product of products; track product.id) {
+    <div class="product-card">
+      <h2>{{ product.name }}</h2>
+      <p>Price: ${{ product.price }}</p>
+      <p>Stock: {{ product.stock }}</p>
+      <img [src]="'http://localhost:3000' + product.imageUrl[0]" alt="{{ product.name }}" class="product-image" />
+      <button (click)="viewProductStats(product.id)">See stats</button>
+    </div>
+  }
+  @if (products.length === 0 && isLoading) {
+    <div>
+      <p>Products are being loaded , please wait</p>
+    </div>
+  } @else if (products.length === 0 && !isLoading) {
+    <div>
+      <p>No product was found</p>
+    </div>
+  }
+</div>

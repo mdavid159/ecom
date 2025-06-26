@@ -1,0 +1,10 @@
+<div class="verify-email-container">
+  <h2>Verify Email</h2>
+  <form (ngSubmit)="verify()">
+    <div class="token-group">
+      <label for="token">Token</label>
+      <input type="text" id="token" [(ngModel)]="verifyData.token" name="token" required/>
+    </div>
+    <button type="submit" class="btn">Verify</button>
+  </form>
+</div>

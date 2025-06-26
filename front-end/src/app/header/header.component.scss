@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.header .logo a {
+  color: white; /* Makes the text white */
+  text-decoration: none; /* Removes underline */
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
+  position: relative; /* Required for positioning the dropdown */
+}
+
+.buttons .menu {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #21a0f0;
+  color: white;
+}
+
+.buttons .menu:hover {
+  opacity: 0.9;
+}
+
+.dropdown {
+  display: none; /* Initially hide the dropdown */
+  position: absolute;
+  top: 100%; /* Aligns dropdown below the Menu button */
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 150px;
+  padding: 5px 0;
+}
+
+.dropdown .btn {
+  display: block; /* Stack the buttons vertically */
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown .btn:hover {
+  background-color: #f1f1f1;
+}
+
+.buttons:hover .dropdown {
+  display: block; /* Show the dropdown on hover */
+}

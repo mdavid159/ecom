@@ -1,0 +1,51 @@
+@if(!this.authService.isLoggedIn){
+  <div class="product-page">
+    <div class="product-card">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <p>Stock: {{ product.stock }}</p>
+      <p>Category: {{ product.category }}</p>
+      <p>Published by: {{ product.ByUser }}</p>
+      <div>
+        <product-slider [slides]="slides"></product-slider>
+      </div>
+    </div>
+  </div> }
+
+@if (isOwner) {
+<div class="product-page">
+  <div class="product-card">
+    <h2>{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price }}</p>
+    <p>Stock: {{ product.stock }}</p>
+    <p>Category: {{ product.category }}</p>
+    <p>Published by: {{ product.ByUser }}</p>
+    <div>
+      <product-slider [slides]="slides"></product-slider>
+    </div>
+    <div class="button-group">
+      <button class="delete-button" (click)="onDelete(product.id)">Delete Product</button>
+      <button class="edit-button" (click)="onEdit(product.id)">Edit Product</button>
+      <button class="add-to-cart-button" (click)="addToCart(userId, product.name, product.id, product.price, product.imageUrl, quantity)">Add to Cart</button>
+    </div>
+  </div>
+</div> }
+
+@if (!isOwner && this.authService.isLoggedIn) {
+  <div class="product-page">
+    <div class="product-card">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p>Price: ${{ product.price }}</p>
+      <p>Stock: {{ product.stock }}</p>
+      <p>Category: {{ product.category }}</p>
+      <p>Published by: {{ product.ByUser }}</p>
+      <div>
+        <product-slider [slides]="slides"></product-slider>
+      </div>
+      <button class="add-to-cart-button" (click)="addToCart(userId, product.name, product.id, product.price, product.imageUrl, quantity)">Add to Cart</button>
+    </div>
+  </div>
+}
