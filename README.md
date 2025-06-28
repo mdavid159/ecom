@@ -1,4 +1,4 @@
-# Ecommerce Website
+# E-commerce Website
 
 ![last commit](https://img.shields.io/github/last-commit/mdavid159/ecom)
 ![typescript](https://img.shields.io/badge/typescript-73.9%25-blue)
@@ -25,8 +25,8 @@ _Built with the tools and technologies:_
 
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.
-- 📧**Email Notifications**: Automated order confirmations and user communication.
-- 📦**Product and Cart Management** : Manage products and shopping carts effortlessly. 
+- 📧 **Email Notifications**: Automated order confirmations and user communication.
+- 📦 **Product and Cart Management** : Manage products and shopping carts effortlessly. 
 - ⚙ **Robust Testing**: Extensive unit tests ensure reliability and maintainability.  
 - 🚀 **Modular Architecture**: Clear separation of concerns for scalable development.
 
