@@ -1,6 +1,4 @@
-# ECOM
-
-*Transforming Commerce, Empowering Every Purchase Experience*
+# Ecommerce Website
 
 ![last commit](https://img.shields.io/github/last-commit/mdavid159/ecom)
 ![typescript](https://img.shields.io/badge/typescript-73.9%25-blue)
