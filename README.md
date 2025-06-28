@@ -34,23 +34,10 @@ _Built with the tools and technologies:_
 - 🚀 **Modular Architecture**: Clear separation of concerns for scalable development.
 
 ---
-
-## Getting Started
-
 ### Prerequisites
 
 This project requires the following dependencies:
 
 - **Programming Language**: TypeScript  
 - **Package Manager**: npm
-
 ---
-
-### Installation
-
-Build ECOM from the source and install dependencies:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/mdavid159/ecom
