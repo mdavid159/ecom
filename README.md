@@ -29,6 +29,8 @@ _Built with the tools and technologies:_
 
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.
    ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233852.png?raw=true)
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20234117.png?raw=true)
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010438.png?raw=true)
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010522.png?raw=true)
@@ -39,6 +41,9 @@ _Built with the tools and technologies:_
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20005721.png?raw=true)
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20005748.png?raw=true)
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010341.png?raw=true)
+- 📦 **Product creation**: **Multer** handles binary uploads efficiently—faster, smaller, and more memory-friendly than base64.
+  Ideal for image uploads, large files, and scalable systems.
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20234253.png?raw=true)
 - ⚙ **Robust Testing**: Extensive unit tests ensure reliability and maintainability.  
 - 🚀 **Modular Architecture**: Clear separation of concerns for scalable development.
 
