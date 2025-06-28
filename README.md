@@ -29,9 +29,11 @@ _Built with the tools and technologies:_
 ## Overview
 
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.
-   -![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
-   -![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233852.png?raw=true)
-   -![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20234117.png?raw=true)
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
+  - User registration and user details management
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233852.png?raw=true)
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20234117.png?raw=true)
+   ![Image]()
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010438.png?raw=true)
   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010522.png?raw=true)
