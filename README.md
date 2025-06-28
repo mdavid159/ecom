@@ -30,8 +30,15 @@ _Built with the tools and technologies:_
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.
    ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010438.png?raw=true)
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010522.png?raw=true)
 - 📧 **Email Notifications**: Automated order confirmations and user communication.
-- 📦 **Product and Cart Management** : Manage products and shopping carts effortlessly. 
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20234222.png?raw=true)
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20020214.png?raw=true)
+- 📦 **Product and Cart Management** : Manage products and shopping carts effortlessly.
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20005721.png?raw=true)
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20005748.png?raw=true)
+  ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-29%20010341.png?raw=true)
 - ⚙ **Robust Testing**: Extensive unit tests ensure reliability and maintainability.  
 - 🚀 **Modular Architecture**: Clear separation of concerns for scalable development.
 
