@@ -28,7 +28,7 @@ _Built with the tools and technologies:_
 ## Overview
 
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.
-- ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
+   ![Image](https://github.com/mdavid159/ecom/blob/main/Screenshot%202025-06-28%20233837.png?raw=true)
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.
 - 📧 **Email Notifications**: Automated order confirmations and user communication.
 - 📦 **Product and Cart Management** : Manage products and shopping carts effortlessly. 
