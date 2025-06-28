@@ -13,6 +13,7 @@ _Built with the tools and technologies:_
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?logo=prisma&logoColor=white)
 ![Stripe](https://img.shields.io/badge/Stripe-008CDD?logo=stripe&logoColor=white)
+![Multer](https://img.shields.io/badge/Multer-1B1F23?logo=nodedotjs&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white)
 ![Nodemailer](https://img.shields.io/badge/Nodemailer-0B3D91?logo=gmail&logoColor=white)
 
