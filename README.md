@@ -30,7 +30,7 @@ _Built with the tools and technologies:_
 
 - 🔨🔒 **Secure Authentication**: JWT based login , route guards and user management for protected access.  
   ![Image](/uploads/Screenshot%202025-06-28%20233837.png)
-- **User registration** and **User details** management  
+- **User registration** and **User details management**  
   ![Image](/uploads/Screenshot%202025-06-28%20233852.png)  
   ![Image](/uploads/Screenshot%202025-06-29%20025454.png)
 - 💳💸 **Payment Integration**: Facilitates secure checkout flows with Stripe payment sessions.  
